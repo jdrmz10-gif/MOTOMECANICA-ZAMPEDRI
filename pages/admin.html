@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Panel de administración | Zampedri Motomecánica</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="fondo-gris">
+
+  <header class="fondo-negro border-bottom borde-rojo border-4">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <a href="../index.html">
+        <img src="../assets/img/logo.png" alt="Zampedri Motomecánica" width="70" height="70">
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <a class="enlace-claro text-decoration-none" href="../index.html">Volver al sitio</a>
+        <button id="botonSalir" class="btn boton-rojo titulo fw-bold text-uppercase d-none" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <section id="seccionLogin" class="d-none">
+      <div class="row">
+        <div class="col-md-8 col-lg-5 mx-auto">
+          <h1 class="titulo display-6 fw-bold text-uppercase mb-0">Acceso del dueño</h1>
+          <div class="barra-roja mt-3 mb-4"></div>
+
+          <form id="formLogin" class="bg-white p-4">
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control rounded-0 campo" id="email" autocomplete="username" required>
+            </div>
+            <div class="mb-3">
+              <label for="clave" class="form-label fw-semibold">Contraseña</label>
+              <input type="password" class="form-control rounded-0 campo" id="clave" autocomplete="current-password" required>
+            </div>
+            <div id="avisoLogin" class="alert d-none" role="alert"></div>
+            <button type="submit" class="btn boton-rojo btn-lg w-100 titulo fw-bold text-uppercase">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="seccionPanel" class="d-none">
+      <h1 class="titulo display-6 fw-bold text-uppercase mb-0">Panel de productos</h1>
+      <div class="barra-roja mt-3 mb-4"></div>
+
+      <div id="avisoPanel" class="alert d-none" role="alert"></div>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <form id="formProducto" class="bg-white p-4">
+            <h2 class="titulo fs-3 fw-bold text-uppercase">Agregar producto</h2>
+            <div class="mb-3">
+              <label for="nombreProducto" class="form-label fw-semibold">Nombre</label>
+              <input type="text" class="form-control rounded-0 campo" id="nombreProducto" maxlength="100" required>
+            </div>
+            <div class="mb-3">
+              <label for="precioProducto" class="form-label fw-semibold">Precio (en pesos)</label>
+              <input type="number" class="form-control rounded-0 campo" id="precioProducto" min="1" step="1" required>
+            </div>
+            <button type="submit" class="btn boton-rojo w-100 titulo fw-bold text-uppercase">Agregar producto</button>
+          </form>
+        </div>
+
+        <div class="col-lg-7">
+          <h2 class="titulo fs-3 fw-bold text-uppercase">Productos cargados</h2>
+
+          <div id="cajaIniciales" class="bg-white p-4 mb-3 d-none">
+            <p class="mb-3">Todavía no hay productos cargados. Podés cargar los productos iniciales del taller con un solo clic.</p>
+            <button id="botonIniciales" type="button" class="btn boton-rojo titulo fw-bold text-uppercase">Cargar productos iniciales</button>
+          </div>
+
+          <div id="listaAdmin"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-config.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

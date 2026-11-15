@@ -1,0 +1,82 @@
+body {
+  font-family: "Barlow", Arial, sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.titulo { font-family: "Barlow Condensed", Arial, sans-serif; }
+
+.fondo-negro { background-color: #1a1a1a; }
+.fondo-grafito { background-color: #2b2b2b; }
+.fondo-gris { background-color: #f2f2f2; }
+
+.texto-gris { color: #4a4a4a !important; }
+.texto-claro { color: #d9d9d9 !important; }
+.texto-rojo { color: #c8141b !important; }
+.texto-rojo-claro { color: #ff4a50; }
+
+.borde-rojo { border-color: #c8141b !important; }
+.borde-gris { border-color: #4a4a4a !important; }
+
+.enlace-claro { color: #d9d9d9 !important; }
+.enlace-claro:hover { color: #ff4a50 !important; }
+
+.menu {
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #ff4a50;
+}
+
+.boton-rojo {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #c8141b;
+  --bs-btn-border-color: #c8141b;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #4a4a4a;
+  --bs-btn-hover-border-color: #4a4a4a;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #4a4a4a;
+  --bs-btn-active-border-color: #4a4a4a;
+}
+
+.boton-negro {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #1a1a1a;
+  --bs-btn-border-color: #1a1a1a;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #c8141b;
+  --bs-btn-hover-border-color: #c8141b;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #c8141b;
+  --bs-btn-active-border-color: #c8141b;
+}
+
+.barra-roja {
+  width: 64px;
+  height: 5px;
+  background-color: #c8141b;
+}
+
+.tarjeta-producto { border-color: #d9d9d9; }
+
+.tarjeta-servicio {
+  border: 1px solid #d9d9d9;
+  border-top: 5px solid #c8141b;
+}
+
+.puntos [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  opacity: 1;
+}
+
+.puntos .active { background-color: #c8141b; }
+
+.flechas-portada { width: 3.5rem; }
+
+.campo:focus {
+  border-color: #c8141b;
+  box-shadow: 0 0 0 0.2rem #d9d9d9;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zampedri Motomecánica: taller de motos en Los Charruas. Mecánica general, puesta a punto, lubricantes y repuestos.">
+  <title>Zampedri Motomecánica | Taller de motos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="fondo-negro texto-claro small py-2">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>Av. Francisco Ramírez 2158 – Los Charruas</span>
+      <span class="d-flex gap-3">
+        <a class="enlace-claro text-decoration-none" href="https://www.facebook.com/carlos.zampedri" target="_blank" rel="noopener">Facebook</a>
+        <a class="enlace-claro text-decoration-none" href="https://www.instagram.com/zampedri" target="_blank" rel="noopener">Instagram</a>
+        <a class="enlace-claro text-decoration-none" href="https://www.tiktok.com/@carloszampedri" target="_blank" rel="noopener">TikTok</a>
+      </span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fondo-negro border-bottom borde-rojo border-4">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="assets/img/logo.png" alt="Zampedri Motomecánica" width="80" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mx-lg-auto gap-lg-3 titulo fs-5 fw-bold text-uppercase menu">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#marcas">Marcas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+          <a class="btn boton-rojo titulo fs-5 fw-bold text-uppercase my-3 my-lg-0" href="#turno">Solicitar turno</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="fondo-negro" aria-label="Presentación del taller">
+      <div id="carruselPortada" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators puntos">
+          <button type="button" data-bs-target="#carruselPortada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#carruselPortada" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#carruselPortada" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="container px-5 pt-5 pb-5 mb-4">
+              <div class="row align-items-center g-4">
+                <div class="col-lg-6 text-white">
+                  <p class="titulo fs-4 fw-bold text-uppercase texto-rojo-claro mb-2">Taller de motos en Los Charruas</p>
+                  <h1 class="titulo display-2 fw-bold text-uppercase lh-1 mb-3">Tu moto en manos expertas</h1>
+                  <p class="fs-5 texto-claro mb-4">Servicio de mecánica general, puesta a punto y optimización para las principales marcas.</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <a class="btn boton-rojo btn-lg titulo fw-bold text-uppercase" href="#turno">Pedir turno</a>
+                    <a class="btn btn-outline-light btn-lg titulo fw-bold text-uppercase" href="#servicios">Ver servicios</a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="ratio ratio-4x3 border borde-rojo border-2">
+                    <img src="assets/img/motomecanica1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container px-5 pt-5 pb-5 mb-4">
+              <div class="row align-items-center g-4">
+                <div class="col-lg-6 text-white">
+                  <p class="titulo fs-4 fw-bold text-uppercase texto-rojo-claro mb-2">Mecánica de precisión</p>
+                  <h2 class="titulo display-2 fw-bold text-uppercase lh-1 mb-3">Puesta a punto y optimización</h2>
+                  <p class="fs-5 texto-claro mb-4">Regulación de válvulas, carburación y mejoras de motor para recuperar el rendimiento de tu moto.</p>
+                  <a class="btn boton-rojo btn-lg titulo fw-bold text-uppercase" href="#servicios">Conocer más</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="ratio ratio-4x3 border borde-rojo border-2">
+                    <img src="assets/img/motomecanica2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container px-5 pt-5 pb-5 mb-4">
+              <div class="row align-items-center g-4">
+                <div class="col-lg-6 text-white">
+                  <p class="titulo fs-4 fw-bold text-uppercase texto-rojo-claro mb-2">Lubricantes y repuestos</p>
+                  <h2 class="titulo display-2 fw-bold text-uppercase lh-1 mb-3">Todo para el mantenimiento</h2>
+                  <p class="fs-5 texto-claro mb-4">Aceites, filtros, bujías, frenos y accesorios, disponibles en el taller.</p>
+                  <a class="btn boton-rojo btn-lg titulo fw-bold text-uppercase" href="#productos">Ver productos</a>
+                </div>
+                <div class="col-lg-6">
+                  <div class="ratio ratio-4x3 border borde-rojo border-2">
+                    <img src="assets/img/motomecanica3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev flechas-portada" type="button" data-bs-target="#carruselPortada" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next flechas-portada" type="button" data-bs-target="#carruselPortada" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="servicios" class="fondo-gris py-5">
+      <div class="container py-4">
+        <h2 class="titulo display-5 fw-bold text-uppercase mb-0">Nuestros servicios</h2>
+        <div class="barra-roja mt-3 mb-4"></div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">01</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Motor</h3>
+                <p class="card-text texto-gris">Rectificación, mejoras y optimización.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">02</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Carburación</h3>
+                <p class="card-text texto-gris">Limpieza y puesta a punto del carburador.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">03</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Transmisión</h3>
+                <p class="card-text texto-gris">Horquilla, dirección y regulación de válvulas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">04</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Frenos</h3>
+                <p class="card-text texto-gris">Revisión y cambio de pastillas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">05</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Lubricación</h3>
+                <p class="card-text texto-gris">Cambio de aceite y filtros.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">06</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Sistema eléctrico</h3>
+                <p class="card-text texto-gris">Revisión y carga de batería.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">07</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Accesorios</h3>
+                <p class="card-text texto-gris">Instalación y modificaciones.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card tarjeta-servicio h-100 rounded-0">
+              <div class="card-body p-4">
+                <span class="titulo display-5 fw-bold texto-rojo">08</span>
+                <h3 class="titulo fs-3 fw-bold text-uppercase mt-2">Revisión general</h3>
+                <p class="card-text texto-gris">Control, filtro de aire y ajustes.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="py-5">
+      <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end flex-wrap gap-3">
+          <div>
+            <h2 class="titulo display-5 fw-bold text-uppercase mb-0">Productos destacados</h2>
+            <div class="barra-roja mt-3"></div>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn boton-negro rounded-0 fs-4 lh-1 px-3" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev" aria-label="Productos anteriores">&#8249;</button>
+            <button class="btn boton-negro rounded-0 fs-4 lh-1 px-3" type="button" data-bs-target="#carruselProductos" data-bs-slide="next" aria-label="Productos siguientes">&#8250;</button>
+          </div>
+        </div>
+
+        <div id="carruselProductos" class="carousel slide mt-4">
+          <div class="carousel-inner" id="listaProductos"></div>
+          <div class="carousel-indicators puntos position-static mt-4 mb-0" id="puntosProductos"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="marcas" class="fondo-gris py-5">
+      <div class="container py-3">
+        <h2 class="titulo fs-2 fw-bold text-uppercase text-center mb-4">Atendemos las principales marcas</h2>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Zanella</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Gilera</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Honda</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Yamaha</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Rouser</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Guerrero</span>
+          <span class="fondo-negro text-white titulo fs-5 fw-bold text-uppercase text-center px-4 py-3">Cerro</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="turno" class="fondo-negro py-5">
+      <div class="container py-4">
+        <div class="row g-5">
+          <div class="col-lg-6 text-white">
+            <h2 class="titulo display-5 fw-bold text-uppercase mb-0">Solicitá tu turno</h2>
+            <div class="barra-roja mt-3 mb-4"></div>
+            <p class="fs-5 texto-claro mb-4">Completá el formulario con los datos de tu moto y el servicio que necesitás. Nos comunicaremos para confirmar el día y el horario.</p>
+            <p class="fs-5 border-start borde-rojo border-5 ps-3 mb-0">
+              Servicio de mecánica de motos en general<br>
+              De Carlos Zampedri<br>
+              Av. Francisco Ramírez 2158 – Los Charruas
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <form class="bg-white p-4 p-md-5" action="#" method="post">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="nombre" class="form-label fw-semibold">Nombre y apellido</label>
+                  <input type="text" class="form-control rounded-0 campo" id="nombre" name="nombre" minlength="3" maxlength="60" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label fw-semibold">Teléfono</label>
+                  <input type="tel" class="form-control rounded-0 campo" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]{8,15}" placeholder="Solo números" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="fecha" class="form-label fw-semibold">Fecha deseada</label>
+                  <input type="date" class="form-control rounded-0 campo" id="fecha" name="fecha" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="moto" class="form-label fw-semibold">Marca y modelo</label>
+                  <input type="text" class="form-control rounded-0 campo" id="moto" name="moto" maxlength="60" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="servicio" class="form-label fw-semibold">Servicio</label>
+                  <select class="form-select rounded-0 campo" id="servicio" name="servicio" required>
+                    <option value="" selected disabled>Seleccionar</option>
+                    <option>Motor</option>
+                    <option>Carburación</option>
+                    <option>Transmisión</option>
+                    <option>Frenos</option>
+                    <option>Lubricación</option>
+                    <option>Sistema eléctrico</option>
+                    <option>Accesorios y modificaciones</option>
+                    <option>Revisión general</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="comentarios" class="form-label fw-semibold">Comentarios</label>
+                  <textarea class="form-control rounded-0 campo" id="comentarios" name="comentarios" rows="3" maxlength="300"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn boton-rojo btn-lg w-100 titulo fw-bold text-uppercase">Enviar solicitud</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+      <div class="container py-4">
+        <h2 class="titulo display-5 fw-bold text-uppercase mb-0">Dónde encontrarnos</h2>
+        <div class="barra-roja mt-3 mb-4"></div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="fondo-gris p-4 h-100">
+              <p class="titulo fs-2 fw-bold texto-rojo mb-2">Dirección</p>
+              <p class="fs-5 mb-4">Av. Francisco Ramírez 2158<br>Los Charruas</p>
+              <a class="btn boton-rojo titulo fw-bold text-uppercase" href="https://www.google.com/maps/search/?api=1&query=Av+Francisco+Ramirez+2158+Los+Charruas+Entre+Rios+Argentina" target="_blank" rel="noopener">Cómo llegar</a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps?q=Av+Francisco+Ramirez+2158+Los+Charruas+Entre+Rios+Argentina&output=embed" title="Ubicación de Zampedri Motomecánica en Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fondo-negro border-top borde-rojo border-5 pt-5 texto-claro">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-5 d-flex align-items-center gap-3">
+          <img src="assets/img/logo.png" alt="Zampedri Motomecánica" width="110" height="110">
+          <p class="mb-0">Servicio de mecánica de motos en general.</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 offset-lg-1">
+          <h3 class="titulo fs-4 fw-bold text-uppercase text-white">Menú</h3>
+          <ul class="list-unstyled">
+            <li><a class="enlace-claro text-decoration-none" href="#inicio">Inicio</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="#servicios">Servicios</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="#productos">Productos</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="#contacto">Contacto</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="pages/admin.html">Acceso administrador</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="titulo fs-4 fw-bold text-uppercase text-white">Redes</h3>
+          <ul class="list-unstyled">
+            <li><a class="enlace-claro text-decoration-none" href="https://www.facebook.com/carlos.zampedri" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="https://www.instagram.com/zampedri" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a class="enlace-claro text-decoration-none" href="https://www.tiktok.com/@carloszampedri" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center small border-top borde-gris mt-4 mb-0 py-3">© 2026 Zampedri Motomecánica – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
